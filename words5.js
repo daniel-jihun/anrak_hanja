@@ -125,7 +125,7 @@ export const wordList = [
         sound: '제'
     },
     {
-        char: '姉',
+        char: '姊',
         mean: '손위누이',
         sound: '자'
     },
