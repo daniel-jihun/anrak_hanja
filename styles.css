@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
 
+@font-face {
+    font-family: hanja;
+    src: url(LXGWWenKai-Regular.ttf);
+}
+
 :root {
     --pastel-red: #ffadad;
     --pastel-orange: #ffd6a5;
@@ -74,4 +79,8 @@ a {
     align-items: center;
     justify-content: right;
     font-size: 75%;
+}
+
+#char {
+    font-family: hanja;
 }
