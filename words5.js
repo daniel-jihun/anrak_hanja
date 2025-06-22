@@ -75,7 +75,7 @@ export const wordList = [
         sound: '사'
     },
     {
-        char: '悳',
+        char: '德',
         mean: '덕',
         sound: '덕'
     },
