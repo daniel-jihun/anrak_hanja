@@ -1,0 +1,7 @@
+한자 추가할 때
+
+index.html --> <div class="container0"><input type="checkbox" class="c" name="n" id="cn">n단원</div> 추가
+파일 wordsn.js 생성, 한자 입력
+page.js --> import { wordListn } from "./wordsn.js" 추가
+page.js --> wordsTEMP list에 wordListn 추가
+scriptMin.js --> Line 5에 i < n 에 n 수정
