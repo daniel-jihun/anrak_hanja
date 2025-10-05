@@ -32,13 +32,13 @@ const ans = document.getElementById('ans')
 const counter = document.getElementById('counter')
 const idNUM = document.getElementById('idNUM')
 
+let end = false
+
 let idnum = '';
-//let listABC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 for (let i = 0; i < id.length; i++) {
     if (id.charAt(i) == 1) {
         idnum = `${idnum}${i+1},`
-        
     }
 }
 idnum = idnum.slice(0, -1)
@@ -53,12 +53,10 @@ answerButton.addEventListener("click", () =>{answer()})
 nextButton1.addEventListener("click", () =>{next1()})
 nextButton2.addEventListener("click", () =>{next2()})
 document.addEventListener("keydown", (e) =>{
-    if (e.keyCode == 32) {
-        answer();
-    } else if (e.keyCode == 13) {
-        next();
-    } else if (e.keyCode == 72) {
-        hint();
+    if (end == false) {
+        if (e.keyCode == 32) {
+            answer();
+        }
     }
 })
 
@@ -99,6 +97,7 @@ function next1() {
         answerButton.style.visibility = "hidden"
         hintButton.style.visibility = "hidden"
         char.textContent = "끝"
+        end = true;
     }
 }
 
